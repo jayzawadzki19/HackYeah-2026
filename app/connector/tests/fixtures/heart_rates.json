@@ -1,0 +1,23 @@
+{
+  "userProfilePK": 12345678,
+  "calendarDate": "2026-09-29",
+  "startTimestampGMT": "2026-09-28T22:00:00.0",
+  "endTimestampGMT": "2026-09-29T22:00:00.0",
+  "startTimestampLocal": "2026-09-29T00:00:00.0",
+  "endTimestampLocal": "2026-09-30T00:00:00.0",
+  "maxHeartRate": 128,
+  "minHeartRate": 49,
+  "restingHeartRate": 54,
+  "lastSevenDaysAvgRestingHeartRate": 55,
+  "heartRateValueDescriptors": [
+    { "key": "timestamp", "index": 0 },
+    { "key": "heartrate", "index": 1 }
+  ],
+  "heartRateValues": [
+    [1790668800000, 64],
+    [1790668920000, 66],
+    [1790669040000, null],
+    [1790669160000, 71],
+    [1790669280000, 69]
+  ]
+}

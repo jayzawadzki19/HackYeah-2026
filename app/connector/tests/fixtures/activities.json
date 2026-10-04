@@ -1,0 +1,41 @@
+[
+  {
+    "activityId": 20512345678,
+    "activityName": "Intervals",
+    "startTimeLocal": "2026-09-29 18:30:12",
+    "startTimeGMT": "2026-09-29 16:30:12",
+    "activityType": { "typeId": 1, "typeKey": "running", "parentTypeId": 17, "isHidden": false },
+    "distance": 9012.4,
+    "duration": 3605.2,
+    "elapsedDuration": 3660.0,
+    "movingDuration": 3550.0,
+    "elevationGain": 41.0,
+    "elevationLoss": 39.0,
+    "averageSpeed": 2.5,
+    "maxSpeed": 4.6,
+    "calories": 702.0,
+    "averageHR": 152.0,
+    "maxHR": 181.0,
+    "aerobicTrainingEffect": 3.8,
+    "anaerobicTrainingEffect": 2.6,
+    "activityTrainingLoad": 161.4
+  },
+  {
+    "activityId": 20512345679,
+    "activityName": "Strength",
+    "startTimeLocal": "2026-09-29 07:05:00",
+    "startTimeGMT": "2026-09-29 05:05:00",
+    "activityType": { "typeId": 13, "typeKey": "strength_training", "parentTypeId": 29, "isHidden": false },
+    "distance": null,
+    "duration": 1800.0,
+    "calories": 180.0,
+    "averageHR": 104.0,
+    "maxHR": 139.0
+  },
+  {
+    "activityId": 20512345680,
+    "activityName": "Broken entry without a start time",
+    "activityType": { "typeKey": "walking" },
+    "duration": 600.0
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "dailySleepDTO": {
+    "id": 1790628420000,
+    "userProfilePK": 12345678,
+    "calendarDate": "2026-09-29",
+    "sleepTimeSeconds": 28740,
+    "napTimeSeconds": 0,
+    "sleepWindowConfirmed": true,
+    "sleepWindowConfirmationType": "enhanced_confirmed_final",
+    "sleepStartTimestampGMT": 1790628420000,
+    "sleepEndTimestampGMT": 1790657520000,
+    "sleepStartTimestampLocal": 1790635620000,
+    "sleepEndTimestampLocal": 1790664720000,
+    "deepSleepSeconds": 4500,
+    "lightSleepSeconds": 19140,
+    "remSleepSeconds": 5100,
+    "awakeSleepSeconds": 360,
+    "avgSleepStress": 14.0,
+    "sleepScores": {
+      "overall": { "value": 81, "qualifierKey": "GOOD" },
+      "totalDuration": { "value": 88, "qualifierKey": "GOOD" }
+    }
+  },
+  "sleepMovement": [
+    { "startGMT": "2026-09-28T20:47:00.0", "endGMT": "2026-09-28T20:48:00.0", "activityLevel": 4.8 }
+  ],
+  "remSleepData": true,
+  "sleepLevels": [
+    { "startGMT": "2026-09-28T20:47:00.0", "endGMT": "2026-09-28T21:30:00.0", "activityLevel": 1.0 },
+    { "startGMT": "2026-09-28T21:30:00.0", "endGMT": "2026-09-28T22:45:00.0", "activityLevel": 0.0 },
+    { "startGMT": "2026-09-28T22:45:00.0", "endGMT": "2026-09-29T00:10:00.0", "activityLevel": 2.0 },
+    { "startGMT": "2026-09-29T00:10:00.0", "endGMT": "2026-09-29T00:16:00.0", "activityLevel": 3.0 },
+    { "startGMT": "2026-09-29T00:16:00.0", "endGMT": "2026-09-29T04:52:00.0", "activityLevel": 1.0 }
+  ],
+  "restlessMomentsCount": 31,
+  "avgOvernightHrv": 52.0,
+  "hrvStatus": "BALANCED",
+  "bodyBatteryChange": 46,
+  "restingHeartRate": 54
+}

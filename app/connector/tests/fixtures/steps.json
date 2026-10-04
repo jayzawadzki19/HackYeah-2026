@@ -1,0 +1,26 @@
+[
+  {
+    "startGMT": "2026-09-29T07:30:00.0",
+    "endGMT": "2026-09-29T07:45:00.0",
+    "steps": 0,
+    "pushes": 0,
+    "primaryActivityLevel": "sedentary",
+    "activityLevelConstant": true
+  },
+  {
+    "startGMT": "2026-09-29T07:45:00.0",
+    "endGMT": "2026-09-29T08:00:00.0",
+    "steps": 412,
+    "pushes": 0,
+    "primaryActivityLevel": "active",
+    "activityLevelConstant": false
+  },
+  {
+    "startGMT": "2026-09-29T08:00:00.0",
+    "endGMT": "2026-09-29T08:15:00.0",
+    "steps": 37,
+    "pushes": 0,
+    "primaryActivityLevel": "sedentary",
+    "activityLevelConstant": false
+  }
+]
