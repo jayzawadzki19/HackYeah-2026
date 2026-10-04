@@ -30,8 +30,9 @@ import { AsyncState } from '../../ui/async-state';
               <div class="chart" echarts [options]="chart()" (chartClick)="pick($event)"></div>
               <div class="day-row" role="tablist">
                 @for (day of view.value.days; track day.date) {
-                  <button type="button" role="tab" [class.is-on]="day.date === active()" [attr.aria-selected]="day.date === active()" (click)="selected.set(day.date)">
-                    {{ chip(day.date) }}
+                  <button type="button" role="tab" [class.is-on]="day.date === active()" [attr.aria-selected]="day.date === active()" [attr.aria-label]="chip(day.date)" (click)="selected.set(day.date)">
+                    <span>{{ weekday(day.date) }}</span>
+                    <span>{{ dayNumber(day.date) }}</span>
                   </button>
                 }
               </div>
@@ -133,14 +134,14 @@ export class WeekPage {
         type: 'category',
         data: days.map(day => this.chip(day.date)),
         axisTick: { show: false },
-        axisLine: { lineStyle: { color: 'rgba(27,23,20,0.18)' } },
-        axisLabel: { color: '#5e564c', fontFamily: 'Schibsted Grotesk Variable', fontSize: 11 },
+        axisLine: { lineStyle: { color: 'rgba(16,36,28,0.16)' } },
+        axisLabel: { color: '#5c6b64', fontFamily: 'Schibsted Grotesk Variable', fontSize: 11 },
       },
       yAxis: {
         type: 'value',
         max: 100,
-        splitLine: { lineStyle: { color: 'rgba(27,23,20,0.08)' } },
-        axisLabel: { color: '#5e564c', fontFamily: 'IBM Plex Mono', fontSize: 10 },
+        splitLine: { lineStyle: { color: 'rgba(16,36,28,0.08)' } },
+        axisLabel: { color: '#5c6b64', fontFamily: 'IBM Plex Mono', fontSize: 10 },
       },
       series: [
         {
@@ -149,13 +150,13 @@ export class WeekPage {
           barWidth: 18,
           data: days.map(day => ({
             value: day.dayLoad,
-            itemStyle: { color: day.date === active ? '#8d2e2b' : '#1b1714', borderRadius: [3, 3, 0, 0] },
+            itemStyle: { color: day.date === active ? '#10241c' : '#7dffc3', borderRadius: [8, 8, 0, 0] },
           })),
           markPoint: {
             symbol: 'diamond',
             symbolSize: 12,
-            itemStyle: { color: '#8a4630' },
-            label: { show: true, formatter: '{b}', color: '#8a4630', fontFamily: 'IBM Plex Mono', fontSize: 10, position: 'top' },
+            itemStyle: { color: '#10241c' },
+            label: { show: true, formatter: '{b}', color: '#10241c', fontFamily: 'IBM Plex Mono', fontSize: 10, position: 'top' },
             data: days.flatMap((day, index) => day.workouts.map(workout => ({ coord: [index, Math.max(day.dayLoad, 8)], name: workout.intensity }))),
           },
         },
@@ -164,11 +165,20 @@ export class WeekPage {
           type: 'line',
           data: days.map(day => day.capacityForecast),
           showSymbol: false,
-          lineStyle: { color: '#1d6844', width: 1.5 },
+          lineStyle: { color: '#12a36a', width: 2 },
         },
       ],
     };
   });
+
+  weekday(date: string): string {
+    return shortDate(date).slice(0, 3);
+  }
+
+  dayNumber(date: string): string {
+    const day = shortDate(date).split(' ')[1] ?? '';
+    return day.padStart(2, '0');
+  }
 
   chip(date: string): string {
     const today = this.today();

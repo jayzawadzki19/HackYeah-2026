@@ -96,14 +96,14 @@ export class MeetingPage {
       tooltip: { trigger: 'axis' },
       xAxis: {
         type: 'time',
-        axisLabel: { color: '#5e564c', fontFamily: 'IBM Plex Mono', fontSize: 10 },
-        axisLine: { lineStyle: { color: 'rgba(27,23,20,0.18)' } },
+        axisLabel: { color: '#5c6b64', fontFamily: 'IBM Plex Mono', fontSize: 10 },
+        axisLine: { lineStyle: { color: 'rgba(16,36,28,0.16)' } },
       },
       yAxis: {
         type: 'value',
         name: 'Stress',
-        splitLine: { lineStyle: { color: 'rgba(27,23,20,0.08)' } },
-        axisLabel: { color: '#5e564c', fontFamily: 'IBM Plex Mono', fontSize: 10 },
+        splitLine: { lineStyle: { color: 'rgba(16,36,28,0.08)' } },
+        axisLabel: { color: '#5c6b64', fontFamily: 'IBM Plex Mono', fontSize: 10 },
       },
       series: [
         { type: 'line', stack: 'band', data: band, symbol: 'none', lineStyle: { opacity: 0 }, areaStyle: { opacity: 0 }, silent: true },
@@ -121,13 +121,13 @@ export class MeetingPage {
           type: 'line',
           data: trace.map(point => [point.t, point.stress]),
           showSymbol: false,
-          lineStyle: { color: '#8d2e2b', width: 2 },
+          lineStyle: { color: '#0f6b45', width: 2 },
           markArea: meeting
             ? {
                 silent: true,
                 data: [
-                  [{ xAxis: meeting.start, itemStyle: { color: 'rgba(141, 46, 43, 0.14)' } }, { xAxis: meeting.end }],
-                  ...(recovered ? [[{ xAxis: meeting.end, itemStyle: { color: 'rgba(138, 70, 48, 0.16)' } }, { xAxis: recovered }]] : []),
+                  [{ xAxis: meeting.start, itemStyle: { color: 'rgba(125, 255, 195, 0.45)' } }, { xAxis: meeting.end }],
+                  ...(recovered ? [[{ xAxis: meeting.end, itemStyle: { color: 'rgba(16, 36, 28, 0.08)' } }, { xAxis: recovered }]] : []),
                 ],
               }
             : undefined,

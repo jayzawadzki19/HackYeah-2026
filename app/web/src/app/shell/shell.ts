@@ -17,23 +17,19 @@ import { relativeAgo } from '../domain/time';
   encapsulation: ViewEncapsulation.None,
   imports: [RouterOutlet, RouterLink, RouterLinkActive],
   template: `
-    <div class="app">
-      <aside class="dock">
-        <p class="wordmark">Headroom</p>
-        <p class="tagline">A calendar-aware recovery forecast.</p>
-        <nav class="tabs" aria-label="Sections">
-          <a routerLink="briefing" routerLinkActive="is-active">Briefing</a>
-          <a routerLink="week" routerLinkActive="is-active">Week</a>
-          <a routerLink="energy-map" routerLinkActive="is-active">Energy</a>
-          <a routerLink="check-in" routerLinkActive="is-active">Check-in</a>
-        </nav>
-      </aside>
-      <div class="stage">
+    <div class="canvas">
+      <div class="app">
         <header class="mast">
-          <p class="wordmark stage-mark">Headroom</p>
+          <div class="who">
+            <span class="avatar" aria-hidden="true">{{ initial() }}</span>
+            <div>
+              <p class="kicker">Welcome back</p>
+              <p class="who-name">{{ greetingName() }}</p>
+            </div>
+          </div>
           <nav class="accounts" aria-label="Account">
-            <a [routerLink]="['/', 'jakub', section()]" [attr.aria-current]="user() === 'jakub' ? 'page' : null">Jakub - live</a>
-            <a [routerLink]="['/', 'marta', section()]" [attr.aria-current]="user() === 'marta' ? 'page' : null">Marta - demo persona</a>
+            <a [routerLink]="['/', 'jakub', section()]" [attr.aria-current]="user() === 'jakub' ? 'page' : null">Jakub</a>
+            <a [routerLink]="['/', 'marta', section()]" [attr.aria-current]="user() === 'marta' ? 'page' : null">Marta</a>
           </nav>
         </header>
         @if (persona()?.isSynthetic) {
@@ -42,24 +38,44 @@ import { relativeAgo } from '../domain/time';
         @if (persona()?.live) {
           <p class="live-line">
             <span class="pulse" aria-hidden="true"></span>
-            Live - Garmin via open-wearables
+            Live
             @if (syncLabel(); as ago) {
-              <span class="sync">Last sync: {{ ago }}</span>
+              <span class="sync">Synced {{ ago }}</span>
             }
           </p>
         }
-        @if (known()) {
-          <main>
-            <router-outlet />
-          </main>
-        } @else {
-          <p class="state-error" role="alert">Unknown account.</p>
-        }
-      </div>
-      <div class="toasts" aria-live="polite">
-        @for (toast of toasts.items(); track toast.id) {
-          <p class="toast">{{ toast.text }}</p>
-        }
+        <div class="stage">
+          @if (known()) {
+            <main>
+              <router-outlet />
+            </main>
+          } @else {
+            <p class="state-error" role="alert">Unknown account.</p>
+          }
+        </div>
+        <nav class="dock" aria-label="Sections">
+          <a routerLink="briefing" routerLinkActive="is-active">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1z"/></svg>
+            <span>Brief</span>
+          </a>
+          <a routerLink="week" routerLinkActive="is-active">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3M17 3v3M4 8h16M6 5h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg>
+            <span>Week</span>
+          </a>
+          <a routerLink="energy-map" routerLinkActive="is-active">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 12.2-4.7A7 7 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg>
+            <span>Energy</span>
+          </a>
+          <a routerLink="check-in" routerLinkActive="is-active">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11a4 4 0 1 1 8 0c0 3-4 5-4 5s-4-2-4-5zM5 20c1.2-2 3.2-3 7-3s5.8 1 7 3"/></svg>
+            <span>Check-in</span>
+          </a>
+        </nav>
+        <div class="toasts" aria-live="polite">
+          @for (toast of toasts.items(); track toast.id) {
+            <p class="toast">{{ toast.text }}</p>
+          }
+        </div>
       </div>
     </div>
   `,
@@ -92,6 +108,8 @@ export class Shell {
     if (page === 'week' || page === 'energy-map' || page === 'check-in') return page;
     return 'briefing';
   });
+  readonly greetingName = computed(() => this.persona()?.displayName ?? (this.user() === 'marta' ? 'Marta' : 'Jakub'));
+  readonly initial = computed(() => this.greetingName().charAt(0).toUpperCase());
   readonly persona = computed(() => {
     const briefing = this.api.briefingView();
     if (briefing.kind === 'ready') return briefing.value.user;

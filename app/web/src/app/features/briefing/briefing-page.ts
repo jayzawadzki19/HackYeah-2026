@@ -128,8 +128,8 @@ export class BriefingPage {
           type: 'line',
           data: points.filter(point => point.stress !== null).map(point => [point.t, point.stress]),
           showSymbol: false,
-          lineStyle: { color: '#e7b2ad', width: 1.6 },
-          areaStyle: { color: 'rgba(231, 178, 173, 0.2)' },
+          lineStyle: { color: '#12a36a', width: 2 },
+          areaStyle: { color: 'rgba(125, 255, 195, 0.35)' },
         },
       ],
     };
