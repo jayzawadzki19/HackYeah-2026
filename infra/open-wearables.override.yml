@@ -1,0 +1,12 @@
+# Local overrides for the open-wearables stack used by Headroom.
+# Usage (from the open-wearables directory):
+#   docker compose -f docker-compose.yml -f ../HackYeah-2026/infra/open-wearables.override.yml up -d
+services:
+  db:
+    # Postgres is only needed inside the compose network; publishing 5432 clashes with other local projects.
+    ports: !reset []
+  svix-server:
+    environment:
+      # Svix blocks private IPs (SSRF protection). Allow only Docker Desktop's host gateway,
+      # so webhooks reach the Headroom api at http://host.docker.internal:3001.
+      SVIX_WHITELIST_SUBNETS: "[192.168.65.0/24]"
