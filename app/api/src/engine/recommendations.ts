@@ -258,7 +258,7 @@ const bufferActions = (input: RecommendInput, cfg: EngineConfig): readonly Actio
       .sort((a, b) => b.bodyEffect - a.bodyEffect);
     const drain = drains[0];
     const backToBack = item.modifiers.backToBack && item.load >= 50;
-    if (!backToBack && drain === undefined) return [];
+    if (durationMin(item.meeting) > 60 || (!backToBack && drain === undefined)) return [];
     const previous = tomorrow.meetings
       .filter(
         (other) =>
@@ -270,7 +270,7 @@ const bufferActions = (input: RecommendInput, cfg: EngineConfig): readonly Actio
     const personId = drain?.person.id ?? item.meeting.attendeeIds[0];
     const person = input.people.find((candidate) => candidate.id === personId);
     const name = firstName(person?.name ?? drain?.person.name ?? '');
-    const withName = name.length > 0 ? ` with ${name}` : '';
+    const withName = name.length > 0 && !item.meeting.title.includes(name) ? ` with ${name}` : '';
     const parts = [
       backToBack && previous ? `Back-to-back after the ${previous.meeting.title}` : null,
       drain ? `${typePlural(item.meeting.type)} with ${name} cost more than they feel (see Energy map)` : null,
