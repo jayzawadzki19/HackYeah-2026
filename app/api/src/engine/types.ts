@@ -1,6 +1,14 @@
-import type { ActionRule, EnergyGroup, GapLevel, MeetingType, Rating, WorkoutIntensity } from '../../../contracts/api-contract';
+import type {
+  ActionRule,
+  CapacityComponentKind,
+  EnergyGroup,
+  GapLevel,
+  MeetingType,
+  Rating,
+  WorkoutIntensity,
+} from '../../../contracts/api-contract';
 
-export type { ActionRule, EnergyGroup, GapLevel, MeetingType, Rating, WorkoutIntensity };
+export type { ActionRule, CapacityComponentKind, EnergyGroup, GapLevel, MeetingType, Rating, WorkoutIntensity };
 
 /** Epoch milliseconds. The engine never reads the clock; `now` is always a parameter. */
 export type EpochMs = number;
