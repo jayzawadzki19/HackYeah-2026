@@ -8,7 +8,7 @@ import { capacityRows, scoreText } from '../../domain/capacity';
   encapsulation: ViewEncapsulation.None,
   template: `
     <section class="capacity">
-      <p class="score" data-testid="capacity-score">{{ scoreText(capacity().score) }}</p>
+      <p class="score"><span>Last night</span><span data-testid="capacity-score">{{ scoreText(capacity().score) }}</span></p>
       <ol>
         @for (row of rows(); track row.kind) {
           <li data-testid="capacity-row" [attr.data-kind]="row.kind">

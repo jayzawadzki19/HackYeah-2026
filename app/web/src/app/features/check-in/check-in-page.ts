@@ -17,28 +17,33 @@ import { AsyncState } from '../../ui/async-state';
       @if (api.pendingView(); as view) {
         @if (view.kind === 'ready') {
           <article class="page checkin">
-            <header class="lede">
-              <p class="eyebrow">One tap</p>
-              <h1>How did it feel?</h1>
-            </header>
             @if (result(); as done) {
+              <header class="lede">
+                <p class="eyebrow">One tap</p>
+                <h1>Checked in.</h1>
+              </header>
               <section class="explain">
                 <p>{{ done.message }}</p>
                 <a class="commit" [routerLink]="['/', api.user(), 'energy-map']">See the energy map</a>
               </section>
             } @else if (view.value.length === 0) {
+              <header class="lede">
+                <p class="eyebrow">One tap</p>
+                <h1>You are up to date.</h1>
+              </header>
               <p class="empty">No check-in is waiting.</p>
             } @else {
-              @for (card of view.value; track card.meetingId) {
-                <section class="prompt">
-                  <h2>{{ question(card) }}</h2>
-                  <div class="choices">
-                    <button type="button" (click)="choose(card.meetingId, -1)" [disabled]="busy()">drained</button>
-                    <button type="button" (click)="choose(card.meetingId, 0)" [disabled]="busy()">neutral</button>
-                    <button type="button" (click)="choose(card.meetingId, 1)" [disabled]="busy()">energized</button>
-                  </div>
-                </section>
-              }
+              <header class="lede">
+                <p class="eyebrow">One tap</p>
+                <h1>{{ question(view.value[0]!) }}</h1>
+              </header>
+              <section class="prompt">
+                <div class="choices">
+                  <button type="button" (click)="choose(view.value[0]!.meetingId, -1)" [disabled]="busy()">drained</button>
+                  <button type="button" (click)="choose(view.value[0]!.meetingId, 0)" [disabled]="busy()">neutral</button>
+                  <button type="button" (click)="choose(view.value[0]!.meetingId, 1)" [disabled]="busy()">energized</button>
+                </div>
+              </section>
             }
           </article>
         }

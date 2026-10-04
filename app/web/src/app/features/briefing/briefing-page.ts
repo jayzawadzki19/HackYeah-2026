@@ -1,3 +1,4 @@
+import { NgTemplateOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, inject, ViewEncapsulation } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import type { EChartsCoreOption } from 'echarts/core';
@@ -19,7 +20,7 @@ import { HeadroomGauge } from './headroom-gauge';
   selector: 'hr-briefing-page',
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
-  imports: [AsyncState, HeadroomGauge, CapacityCard, ActionPlan, RouterLink, NgxEchartsDirective],
+  imports: [AsyncState, HeadroomGauge, CapacityCard, ActionPlan, RouterLink, NgxEchartsDirective, NgTemplateOutlet],
   template: `
     <hr-async [state]="api.briefingView()">
       @if (api.briefingView(); as view) {
@@ -32,6 +33,9 @@ import { HeadroomGauge } from './headroom-gauge';
               <p class="eyebrow">{{ focus() === 'tomorrow' ? 'For tomorrow' : 'Right now' }}</p>
               <h1>{{ view.value.headline }}</h1>
             </header>
+            @if (focus() === 'now') {
+              <ng-container [ngTemplateOutlet]="coming" />
+            }
             <hr-headroom-gauge [outlook]="view.value.outlook" [projected]="view.value.projected" [date]="view.value.tomorrow.date" />
             <hr-capacity-card [capacity]="view.value.capacity" />
             <section class="plan-block fold">
@@ -45,27 +49,32 @@ import { HeadroomGauge } from './headroom-gauge';
                 <p class="fine">Estimates only change what the plan changes: sleep and training</p>
               }
             </section>
-            <section class="coming fold">
-              <h2>Coming up</h2>
-              @if (view.value.upcoming.length === 0) {
-                <p class="empty">Nothing in the next 24 hours.</p>
-              } @else {
-                <ol class="agenda">
-                  @for (item of view.value.upcoming; track item.id) {
-                    <li>
-                      <a [routerLink]="['/', view.value.user.key, 'meetings', item.id]">
-                        <span class="when">{{ clock(item.start) }}</span>
-                        <span class="what">
-                          <strong>{{ item.title }}</strong>
-                          <em>{{ item.basis.label }}</em>
-                        </span>
-                        <span class="load" [attr.data-tone]="tone(item.predictedLoad)">{{ item.predictedLoad }}</span>
-                      </a>
-                    </li>
-                  }
-                </ol>
-              }
-            </section>
+            @if (focus() !== 'now') {
+              <ng-container [ngTemplateOutlet]="coming" />
+            }
+            <ng-template #coming>
+              <section class="coming fold">
+                <h2>Coming up</h2>
+                @if (view.value.upcoming.length === 0) {
+                  <p class="empty">Nothing in the next 24 hours.</p>
+                } @else {
+                  <ol class="agenda">
+                    @for (item of view.value.upcoming; track item.id) {
+                      <li>
+                        <a [routerLink]="['/', view.value.user.key, 'meetings', item.id]">
+                          <span class="when">{{ clock(item.start) }}</span>
+                          <span class="what">
+                            <strong>{{ item.title }}</strong>
+                            <em>{{ item.basis.label }}</em>
+                          </span>
+                          <span class="load" [attr.data-tone]="tone(item.predictedLoad)">{{ item.predictedLoad }}</span>
+                        </a>
+                      </li>
+                    }
+                  </ol>
+                }
+              </section>
+            </ng-template>
             @if (view.value.live; as live) {
               <section class="live-tile fold">
                 <header>
