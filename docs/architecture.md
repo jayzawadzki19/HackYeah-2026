@@ -205,6 +205,8 @@ export interface CalendarEvent {
 }
 ```
 
+In the hackathon build the mock calendar files stay read-only: accepted plan changes (a block, a moved workout, a sleep target) are stored in SQLite and merged over the calendar when the forecast is computed. A demo resets with `bun run db:reset`, and a real provider would write the same changes through `addBlock`.
+
 ### 6.2 Data flows
 
 Live update:
@@ -247,6 +249,8 @@ sequenceDiagram
 | POST | `/api/users/:key/sync-now` | -> 202 |
 | GET (SSE) | `/api/users/:key/stream` | events `sync.status` `{ state, pushedRecords? , error? }`, `forecast.updated` `{ computedAt }` |
 | POST | `/webhooks/open-wearables` | Svix-signed; 204, or 400 on a bad signature |
+
+The exact request and response types live in `app/contracts/api-contract.ts`, imported by both the api and the web app.
 
 Validation: request bodies are validated with zod pipes; unknown user keys return 404; all errors use one problem-details shape `{ type, title, status, detail }`.
 
@@ -330,7 +334,7 @@ For each person with at least `MIN_MEETINGS_PER_PERSON` meetings: `bodyEffect` =
 
 ### 7.8 Recommendations
 
-Deterministic rules; each produces an action with `id`, `title`, `evidence` (text plus data references), `impact` and an optional calendar block. The briefing shows the top 3 by impact (`impact = related predicted load * gap / 100`).
+Deterministic rules; each produces an action with `id`, `title`, `evidence` (text plus data references), `impact` and a plan change. Actions are ordered by rule (sleep, training, pre-meeting reset, buffer, recovery block), then by impact (`impact = related predicted load * gap / 100`), and the briefing shows the top 3. Only the heaviest upcoming meeting gets a pre-meeting reset, so the plan stays short.
 
 | Rule | Trigger | Action |
 |---|---|---|
@@ -340,7 +344,7 @@ Deterministic rules; each produces an action with `id`, `title`, `evidence` (tex
 | Buffer / walking 1:1 | back-to-back meeting with load >= 50, or a hidden-drain attendee | Shift by 15 min and/or make it a walking meeting |
 | Recovery block | day after a red day | Protect 30 min in the lowest-load slot |
 
-Accepting an action writes a `source: 'headroom'` block through `CalendarProvider.addBlock` and returns the projected capacity, day load and gap (only sleep and training changes alter the projection; the UI says so).
+Accepting an action stores its plan change (a `source: 'headroom'` block, a moved workout or a sleep target) and returns the projected capacity, day load and gap (only sleep and training changes alter the projection; the UI says so).
 
 ## 8. web (Angular)
 
@@ -356,11 +360,11 @@ Accepting an action writes a `source: 'headroom'` block through `CalendarProvide
 | Table | Columns |
 |---|---|
 | `reflections` | `id, user_key, meeting_id, rating (-1/0/1), created_at`, unique `(user_key, meeting_id)` |
-| `accepted_actions` | `id, user_key, action_id, calendar_block_id, accepted_at` |
+| `accepted_actions` | `id, user_key, action_id, change_json, accepted_at`, unique `(user_key, action_id)` |
 | `forecast_snapshots` | `user_key, computed_at, payload_json` (latest per user is served) |
 | `webhook_deliveries` | `svix_id (pk), received_at` for idempotency |
 
-Calendars live in `app/api/data/calendars/{user}.json`; blocks added by Headroom are appended there through the provider.
+Calendars live in `app/api/data/calendars/{user}.json` and are never modified by the app; Headroom's changes come from `accepted_actions` and are merged at read time.
 
 ## 10. Error handling and degraded modes
 
@@ -418,7 +422,7 @@ open-wearables/         # fork, branch feat/sdk-garmin-wellness-metrics
 | Step | Command |
 |---|---|
 | open-wearables | From `open-wearables/`: `docker compose -f docker-compose.yml -f ../HackYeah-2026/infra/open-wearables.override.yml up -d db redis svix-server app celery-worker celery-beat` (with `OUTGOING_WEBHOOKS_ENABLED=true`). The override drops the host Postgres port (it clashes with other local projects) and allowlists the Docker host for Svix |
-| Setup users and webhook | `bun run setup` (creates users, registers the webhook endpoint, writes ids and secret to `app/api/.env.local`) |
+| Setup users and webhook | `bun run setup` in `app/api` (creates the API key, users and webhook endpoint; writes ids and secrets to `app/api/.env.local` and `app/connector/.env`) |
 | Connector | `uv run connector login` once, then `uv run connector backfill --days 28` and `uv run connector serve` |
 | Persona | `bun run persona:generate --seed 2026` |
 | api | `bun run start:dev` |
