@@ -1,0 +1,46 @@
+# One command from HackYeah-2026: docker compose up --build
+# App: http://localhost:4200/marta/briefing
+# Garmin, once: docker compose run --rm -it headroom login
+name: open-wearables
+
+include:
+  - path: ../open-wearables/docker-compose.yml
+    project_directory: ../open-wearables
+  - path: ./infra/open-wearables.override.yml
+
+services:
+  db:
+    # The included override's !reset does not apply through `include`. Keep Postgres off the host port.
+    ports: !reset []
+  flower:
+    profiles: ["ow-ui"]
+  frontend:
+    profiles: ["ow-ui"]
+  headroom:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    ports:
+      - "4200:4200"
+      - "3001:3001"
+    environment:
+      OW_BASE_URL: http://app:8000
+      WEB_ORIGIN: http://localhost:4200
+      CONNECTOR_URL: http://127.0.0.1:8787
+      GARMIN_TOKEN_DIR: /root/.garminconnect
+    volumes:
+      - headroom-data:/var/lib/headroom
+      - ${HOME}/.garminconnect:/root/.garminconnect
+      - ../open-wearables/backend/config/.env:/open-wearables/backend/config/.env:ro
+    depends_on:
+      app:
+        condition: service_started
+      svix-server:
+        condition: service_healthy
+      celery-worker:
+        condition: service_started
+    restart: unless-stopped
+
+volumes:
+  headroom-data:

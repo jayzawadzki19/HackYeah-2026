@@ -1,0 +1,17 @@
+**/node_modules
+**/.angular
+**/dist
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/*.sqlite
+**/*.sqlite-journal
+**/.env
+**/.env.*
+!**/.env.example
+app/connector/state
+app/api/data/local
+notes
+docs/2026-09-29
+.git
