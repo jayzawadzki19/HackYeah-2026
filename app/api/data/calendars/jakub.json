@@ -1,0 +1,64 @@
+{
+  "userKey": "jakub",
+  "displayName": "Jakub",
+  "isSynthetic": false,
+  "timeZone": "Europe/Warsaw",
+  "people": [
+    { "id": "p-team", "name": "Team", "role": null },
+    { "id": "p-mentor", "name": "Mentor", "role": "HackYeah mentor" },
+    { "id": "p-jury", "name": "Jury", "role": "HackYeah jury" }
+  ],
+  "events": [
+    {
+      "id": "pitch-rehearsal",
+      "kind": "meeting",
+      "title": "Pitch rehearsal",
+      "type": "pitch",
+      "start": "2026-10-03T16:00:00+02:00",
+      "end": "2026-10-03T17:00:00+02:00",
+      "attendeeIds": ["p-team", "p-mentor"],
+      "isGroup": false
+    },
+    {
+      "id": "team-sync-saturday",
+      "kind": "meeting",
+      "title": "Team sync",
+      "type": "team_sync",
+      "start": "2026-10-04T10:00:00+02:00",
+      "end": "2026-10-04T10:30:00+02:00",
+      "attendeeIds": ["p-team"],
+      "isGroup": true
+    },
+    {
+      "id": "mentor-session",
+      "kind": "meeting",
+      "title": "Mentor",
+      "type": "mentor",
+      "start": "2026-10-04T18:00:00+02:00",
+      "end": "2026-10-04T18:45:00+02:00",
+      "attendeeIds": ["p-mentor"],
+      "isGroup": false
+    },
+    {
+      "id": "jury-pitch",
+      "kind": "meeting",
+      "title": "Jury pitch",
+      "type": "pitch",
+      "start": "2026-10-05T15:00:00+02:00",
+      "end": "2026-10-05T15:20:00+02:00",
+      "attendeeIds": ["p-jury"],
+      "isGroup": false
+    },
+    {
+      "id": "team-sync-monday",
+      "kind": "meeting",
+      "title": "Team sync",
+      "type": "team_sync",
+      "start": "2026-10-06T10:00:00+02:00",
+      "end": "2026-10-06T10:30:00+02:00",
+      "attendeeIds": ["p-team"],
+      "isGroup": true
+    }
+  ],
+  "reflections": []
+}

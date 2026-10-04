@@ -1,0 +1,1682 @@
+{
+  "userKey": "marta",
+  "displayName": "Marta",
+  "isSynthetic": true,
+  "timeZone": "Europe/Warsaw",
+  "people": [
+    {
+      "id": "anna-kowalska",
+      "name": "Anna Kowalska",
+      "role": "Lead investor"
+    },
+    {
+      "id": "piotr-nowak",
+      "name": "Piotr Nowak",
+      "role": "Co-founder, CTO"
+    },
+    {
+      "id": "ola-wisniewska",
+      "name": "Ola Wiśniewska",
+      "role": "Head of Product"
+    },
+    {
+      "id": "tomasz-lewandowski",
+      "name": "Tomasz Lewandowski",
+      "role": "Customer (bank)"
+    },
+    {
+      "id": "kasia-wojcik",
+      "name": "Kasia Wójcik",
+      "role": "Independent board member"
+    },
+    {
+      "id": "ewa-mazur",
+      "name": "Ewa Mazur",
+      "role": "Mentor"
+    },
+    {
+      "id": "jan-kaminski",
+      "name": "Jan Kamiński",
+      "role": "Partner, Vistula Ventures"
+    },
+    {
+      "id": "magdalena-zajac",
+      "name": "Magdalena Zając",
+      "role": "Partner, Baltic Seed Fund"
+    },
+    {
+      "id": "krzysztof-szymanski",
+      "name": "Krzysztof Szymański",
+      "role": "Principal, Odra Capital"
+    },
+    {
+      "id": "agnieszka-wozniak",
+      "name": "Agnieszka Woźniak",
+      "role": "Partner, Tatra VC"
+    },
+    {
+      "id": "pawel-dabrowski",
+      "name": "Paweł Dąbrowski",
+      "role": "Partner, Mazovia Growth"
+    },
+    {
+      "id": "marek-kozlowski",
+      "name": "Marek Kozłowski",
+      "role": "Head of IT, logistics company (customer)"
+    },
+    {
+      "id": "joanna-jankowska",
+      "name": "Joanna Jankowska",
+      "role": "COO, retail chain (customer)"
+    },
+    {
+      "id": "rafal-wojciechowski",
+      "name": "Rafał Wojciechowski",
+      "role": "CTO, insurer (customer)"
+    },
+    {
+      "id": "natalia-kwiatkowska",
+      "name": "Natalia Kwiatkowska",
+      "role": "Procurement lead, telecom (customer)"
+    },
+    {
+      "id": "bartosz-krawczyk",
+      "name": "Bartosz Krawczyk",
+      "role": "Founder, e-commerce brand (customer)"
+    },
+    {
+      "id": "monika-piotrowska",
+      "name": "Monika Piotrowska",
+      "role": "Head of Operations, energy company (customer)"
+    },
+    {
+      "id": "adam-grabowski",
+      "name": "Adam Grabowski",
+      "role": "Candidate - Senior Backend Engineer"
+    },
+    {
+      "id": "karolina-pawlowska",
+      "name": "Karolina Pawłowska",
+      "role": "Candidate - Product Designer"
+    },
+    {
+      "id": "wojciech-michalski",
+      "name": "Wojciech Michalski",
+      "role": "Candidate - Data Engineer"
+    },
+    {
+      "id": "zofia-krol",
+      "name": "Zofia Król",
+      "role": "Candidate - Head of Sales"
+    },
+    {
+      "id": "mateusz-wieczorek",
+      "name": "Mateusz Wieczorek",
+      "role": "Candidate - Frontend Engineer"
+    },
+    {
+      "id": "alicja-jablonska",
+      "name": "Alicja Jabłońska",
+      "role": "Candidate - Customer Success Manager"
+    },
+    {
+      "id": "dawid-majewski",
+      "name": "Dawid Majewski",
+      "role": "Candidate - DevOps Engineer"
+    },
+    {
+      "id": "weronika-olszewska",
+      "name": "Weronika Olszewska",
+      "role": "Candidate - Marketing Lead"
+    },
+    {
+      "id": "kamil-stepien",
+      "name": "Kamil Stępień",
+      "role": "Candidate - Mobile Engineer"
+    },
+    {
+      "id": "michal-zielinski",
+      "name": "Michał Zieliński",
+      "role": "Partner, Wisła Capital (new fund, first meeting)"
+    },
+    {
+      "id": "igor-malinowski",
+      "name": "Igor Malinowski",
+      "role": "Candidate - ML Engineer"
+    },
+    {
+      "id": "julia-sikora",
+      "name": "Julia Sikora",
+      "role": "Candidate - QA Engineer"
+    },
+    {
+      "id": "filip-kaczmarek",
+      "name": "Filip Kaczmarek",
+      "role": "Candidate - Backend Engineer"
+    },
+    {
+      "id": "hanna-wrobel",
+      "name": "Hanna Wróbel",
+      "role": "Candidate - Data Scientist"
+    },
+    {
+      "id": "ewelina-gorska",
+      "name": "Ewelina Górska",
+      "role": "Head of Digital, pharma company (customer)"
+    },
+    {
+      "id": "grzegorz-baran",
+      "name": "Grzegorz Baran",
+      "role": "Head of Payments, fintech (customer)"
+    },
+    {
+      "id": "szymon-pietrzak",
+      "name": "Szymon Pietrzak",
+      "role": "Partner, Carpathia Ventures"
+    }
+  ],
+  "events": [
+    {
+      "id": "run-2026-08-23",
+      "kind": "workout",
+      "title": "Run: easy 8 km",
+      "intensity": "easy",
+      "start": "2026-08-23T18:30:00+02:00",
+      "end": "2026-08-23T19:30:00+02:00"
+    },
+    {
+      "id": "standup-0-2026-08-24-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-08-24T09:00:00+02:00",
+      "end": "2026-08-24T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "interview-wojciech-michalski-0-2026-08-24-585",
+      "kind": "meeting",
+      "title": "Interview - Wojciech Michalski",
+      "type": "interview",
+      "start": "2026-08-24T09:45:00+02:00",
+      "end": "2026-08-24T10:45:00+02:00",
+      "attendeeIds": [
+        "wojciech-michalski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "one-on-one-piotr-5-2026-08-24-735",
+      "kind": "meeting",
+      "title": "1:1 with Piotr",
+      "type": "one_on_one",
+      "start": "2026-08-24T12:15:00+02:00",
+      "end": "2026-08-24T12:45:00+02:00",
+      "attendeeIds": [
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-08-24",
+      "kind": "workout",
+      "title": "Run: easy 8 km",
+      "intensity": "easy",
+      "start": "2026-08-24T18:30:00+02:00",
+      "end": "2026-08-24T19:30:00+02:00"
+    },
+    {
+      "id": "standup-1-2026-08-25-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-08-25T09:00:00+02:00",
+      "end": "2026-08-25T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "mentor-kasia-1-2026-08-25-630",
+      "kind": "meeting",
+      "title": "Mentor session with Kasia",
+      "type": "mentor",
+      "start": "2026-08-25T10:30:00+02:00",
+      "end": "2026-08-25T11:30:00+02:00",
+      "attendeeIds": [
+        "kasia-wojcik"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-08-25",
+      "kind": "workout",
+      "title": "Run: tempo 3 x 2 km",
+      "intensity": "tempo",
+      "start": "2026-08-25T18:30:00+02:00",
+      "end": "2026-08-25T19:30:00+02:00"
+    },
+    {
+      "id": "standup-2-2026-08-26-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-08-26T09:00:00+02:00",
+      "end": "2026-08-26T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "customer-bartosz-krawczyk-0-2026-08-26-630",
+      "kind": "meeting",
+      "title": "Customer call - Bartosz Krawczyk",
+      "type": "customer",
+      "start": "2026-08-26T10:30:00+02:00",
+      "end": "2026-08-26T11:30:00+02:00",
+      "attendeeIds": [
+        "bartosz-krawczyk"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "customer-tomasz-1-2026-08-26-780",
+      "kind": "meeting",
+      "title": "Customer call with Tomasz",
+      "type": "customer",
+      "start": "2026-08-26T13:00:00+02:00",
+      "end": "2026-08-26T13:30:00+02:00",
+      "attendeeIds": [
+        "tomasz-lewandowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-3-2026-08-27-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-08-27T09:00:00+02:00",
+      "end": "2026-08-27T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "investor-magdalena-zajac-0-2026-08-27-990",
+      "kind": "meeting",
+      "title": "Investor call - Baltic Seed Fund",
+      "type": "investor",
+      "start": "2026-08-27T16:30:00+02:00",
+      "end": "2026-08-27T17:30:00+02:00",
+      "attendeeIds": [
+        "magdalena-zajac"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-4-2026-08-28-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-08-28T09:00:00+02:00",
+      "end": "2026-08-28T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "customer-monika-piotrowska-0-2026-08-28-585",
+      "kind": "meeting",
+      "title": "Customer call - Monika Piotrowska",
+      "type": "customer",
+      "start": "2026-08-28T09:45:00+02:00",
+      "end": "2026-08-28T10:45:00+02:00",
+      "attendeeIds": [
+        "monika-piotrowska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "customer-marek-kozlowski-0-2026-08-28-690",
+      "kind": "meeting",
+      "title": "Customer call - Marek Kozłowski",
+      "type": "customer",
+      "start": "2026-08-28T11:30:00+02:00",
+      "end": "2026-08-28T12:00:00+02:00",
+      "attendeeIds": [
+        "marek-kozlowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-5-2026-08-31-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-08-31T09:00:00+02:00",
+      "end": "2026-08-31T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "product-review-0-2026-08-31-630",
+      "kind": "meeting",
+      "title": "Product review",
+      "type": "product_review",
+      "start": "2026-08-31T10:30:00+02:00",
+      "end": "2026-08-31T11:30:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-08-31",
+      "kind": "workout",
+      "title": "Run: tempo 3 x 2 km",
+      "intensity": "tempo",
+      "start": "2026-08-31T18:30:00+02:00",
+      "end": "2026-08-31T19:30:00+02:00"
+    },
+    {
+      "id": "standup-6-2026-09-01-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-01T09:00:00+02:00",
+      "end": "2026-09-01T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "interview-zofia-krol-0-2026-09-01-600",
+      "kind": "meeting",
+      "title": "Interview - Zofia Król",
+      "type": "interview",
+      "start": "2026-09-01T10:00:00+02:00",
+      "end": "2026-09-01T11:00:00+02:00",
+      "attendeeIds": [
+        "zofia-krol"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-01",
+      "kind": "workout",
+      "title": "Run: easy 8 km",
+      "intensity": "easy",
+      "start": "2026-09-01T18:30:00+02:00",
+      "end": "2026-09-01T19:30:00+02:00"
+    },
+    {
+      "id": "standup-7-2026-09-02-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-02T09:00:00+02:00",
+      "end": "2026-09-02T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "product-review-1-2026-09-02-615",
+      "kind": "meeting",
+      "title": "Product review",
+      "type": "product_review",
+      "start": "2026-09-02T10:15:00+02:00",
+      "end": "2026-09-02T11:15:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-02",
+      "kind": "workout",
+      "title": "Run: intervals 6 x 800 m",
+      "intensity": "intervals",
+      "start": "2026-09-02T18:30:00+02:00",
+      "end": "2026-09-02T19:30:00+02:00"
+    },
+    {
+      "id": "standup-8-2026-09-03-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-03T09:00:00+02:00",
+      "end": "2026-09-03T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "board-0-2026-09-03-600",
+      "kind": "meeting",
+      "title": "Board meeting",
+      "type": "board",
+      "start": "2026-09-03T10:00:00+02:00",
+      "end": "2026-09-03T12:00:00+02:00",
+      "attendeeIds": [
+        "anna-kowalska",
+        "kasia-wojcik",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "investor-anna-0-2026-09-03-810",
+      "kind": "meeting",
+      "title": "Investor update with Anna",
+      "type": "investor",
+      "start": "2026-09-03T13:30:00+02:00",
+      "end": "2026-09-03T14:30:00+02:00",
+      "attendeeIds": [
+        "anna-kowalska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "one-on-one-ola-0-2026-09-03-990",
+      "kind": "meeting",
+      "title": "1:1 with Ola",
+      "type": "one_on_one",
+      "start": "2026-09-03T16:30:00+02:00",
+      "end": "2026-09-03T17:00:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-9-2026-09-04-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-04T09:00:00+02:00",
+      "end": "2026-09-04T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "customer-natalia-kwiatkowska-0-2026-09-04-615",
+      "kind": "meeting",
+      "title": "Customer call - Natalia Kwiatkowska",
+      "type": "customer",
+      "start": "2026-09-04T10:15:00+02:00",
+      "end": "2026-09-04T11:15:00+02:00",
+      "attendeeIds": [
+        "natalia-kwiatkowska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "customer-joanna-jankowska-0-2026-09-04-720",
+      "kind": "meeting",
+      "title": "Customer call - Joanna Jankowska",
+      "type": "customer",
+      "start": "2026-09-04T12:00:00+02:00",
+      "end": "2026-09-04T12:30:00+02:00",
+      "attendeeIds": [
+        "joanna-jankowska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-10-2026-09-07-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-07T09:00:00+02:00",
+      "end": "2026-09-07T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "interview-adam-grabowski-0-2026-09-07-630",
+      "kind": "meeting",
+      "title": "Interview - Adam Grabowski",
+      "type": "interview",
+      "start": "2026-09-07T10:30:00+02:00",
+      "end": "2026-09-07T11:30:00+02:00",
+      "attendeeIds": [
+        "adam-grabowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "one-on-one-piotr-3-2026-09-07-735",
+      "kind": "meeting",
+      "title": "1:1 with Piotr",
+      "type": "one_on_one",
+      "start": "2026-09-07T12:15:00+02:00",
+      "end": "2026-09-07T12:45:00+02:00",
+      "attendeeIds": [
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-11-2026-09-08-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-08T09:00:00+02:00",
+      "end": "2026-09-08T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "investor-agnieszka-wozniak-0-2026-09-08-585",
+      "kind": "meeting",
+      "title": "Investor call - Tatra VC",
+      "type": "investor",
+      "start": "2026-09-08T09:45:00+02:00",
+      "end": "2026-09-08T10:45:00+02:00",
+      "attendeeIds": [
+        "agnieszka-wozniak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-08",
+      "kind": "workout",
+      "title": "Run: easy 8 km",
+      "intensity": "easy",
+      "start": "2026-09-08T18:30:00+02:00",
+      "end": "2026-09-08T19:30:00+02:00"
+    },
+    {
+      "id": "standup-12-2026-09-09-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-09T09:00:00+02:00",
+      "end": "2026-09-09T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "one-on-one-ola-1-2026-09-09-555",
+      "kind": "meeting",
+      "title": "1:1 with Ola",
+      "type": "one_on_one",
+      "start": "2026-09-09T09:15:00+02:00",
+      "end": "2026-09-09T09:45:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "mentor-ewa-0-2026-09-09-630",
+      "kind": "meeting",
+      "title": "Mentor session with Ewa",
+      "type": "mentor",
+      "start": "2026-09-09T10:30:00+02:00",
+      "end": "2026-09-09T11:30:00+02:00",
+      "attendeeIds": [
+        "ewa-mazur"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "one-on-one-piotr-4-2026-09-09-750",
+      "kind": "meeting",
+      "title": "1:1 with Piotr",
+      "type": "one_on_one",
+      "start": "2026-09-09T12:30:00+02:00",
+      "end": "2026-09-09T13:00:00+02:00",
+      "attendeeIds": [
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-13-2026-09-10-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-10T09:00:00+02:00",
+      "end": "2026-09-10T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "product-review-2-2026-09-10-615",
+      "kind": "meeting",
+      "title": "Product review",
+      "type": "product_review",
+      "start": "2026-09-10T10:15:00+02:00",
+      "end": "2026-09-10T11:15:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-10",
+      "kind": "workout",
+      "title": "Run: intervals 6 x 800 m",
+      "intensity": "intervals",
+      "start": "2026-09-10T18:30:00+02:00",
+      "end": "2026-09-10T19:30:00+02:00"
+    },
+    {
+      "id": "standup-14-2026-09-11-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-11T09:00:00+02:00",
+      "end": "2026-09-11T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "board-1-2026-09-11-600",
+      "kind": "meeting",
+      "title": "Board meeting",
+      "type": "board",
+      "start": "2026-09-11T10:00:00+02:00",
+      "end": "2026-09-11T12:00:00+02:00",
+      "attendeeIds": [
+        "anna-kowalska",
+        "kasia-wojcik",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "investor-anna-1-2026-09-11-810",
+      "kind": "meeting",
+      "title": "Investor update with Anna",
+      "type": "investor",
+      "start": "2026-09-11T13:30:00+02:00",
+      "end": "2026-09-11T14:30:00+02:00",
+      "attendeeIds": [
+        "anna-kowalska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "customer-tomasz-0-2026-09-11-990",
+      "kind": "meeting",
+      "title": "Customer call with Tomasz",
+      "type": "customer",
+      "start": "2026-09-11T16:30:00+02:00",
+      "end": "2026-09-11T17:00:00+02:00",
+      "attendeeIds": [
+        "tomasz-lewandowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-12",
+      "kind": "workout",
+      "title": "Run: easy 8 km",
+      "intensity": "easy",
+      "start": "2026-09-12T18:30:00+02:00",
+      "end": "2026-09-12T19:30:00+02:00"
+    },
+    {
+      "id": "run-2026-09-13",
+      "kind": "workout",
+      "title": "Run: tempo 3 x 2 km",
+      "intensity": "tempo",
+      "start": "2026-09-13T18:30:00+02:00",
+      "end": "2026-09-13T19:30:00+02:00"
+    },
+    {
+      "id": "standup-15-2026-09-14-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-14T09:00:00+02:00",
+      "end": "2026-09-14T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "one-on-one-ola-3-2026-09-14-555",
+      "kind": "meeting",
+      "title": "1:1 with Ola",
+      "type": "one_on_one",
+      "start": "2026-09-14T09:15:00+02:00",
+      "end": "2026-09-14T09:45:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "investor-jan-kaminski-0-2026-09-14-990",
+      "kind": "meeting",
+      "title": "Investor call - Vistula Ventures",
+      "type": "investor",
+      "start": "2026-09-14T16:30:00+02:00",
+      "end": "2026-09-14T17:30:00+02:00",
+      "attendeeIds": [
+        "jan-kaminski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-14",
+      "kind": "workout",
+      "title": "Run: tempo 3 x 2 km",
+      "intensity": "tempo",
+      "start": "2026-09-14T18:30:00+02:00",
+      "end": "2026-09-14T19:30:00+02:00"
+    },
+    {
+      "id": "standup-16-2026-09-15-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-15T09:00:00+02:00",
+      "end": "2026-09-15T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "interview-alicja-jablonska-0-2026-09-15-585",
+      "kind": "meeting",
+      "title": "Interview - Alicja Jabłońska",
+      "type": "interview",
+      "start": "2026-09-15T09:45:00+02:00",
+      "end": "2026-09-15T10:45:00+02:00",
+      "attendeeIds": [
+        "alicja-jablonska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "one-on-one-ola-5-2026-09-15-690",
+      "kind": "meeting",
+      "title": "1:1 with Ola",
+      "type": "one_on_one",
+      "start": "2026-09-15T11:30:00+02:00",
+      "end": "2026-09-15T12:00:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-17-2026-09-16-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-16T09:00:00+02:00",
+      "end": "2026-09-16T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "interview-dawid-majewski-0-2026-09-16-615",
+      "kind": "meeting",
+      "title": "Interview - Dawid Majewski",
+      "type": "interview",
+      "start": "2026-09-16T10:15:00+02:00",
+      "end": "2026-09-16T11:15:00+02:00",
+      "attendeeIds": [
+        "dawid-majewski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "one-on-one-ola-4-2026-09-16-765",
+      "kind": "meeting",
+      "title": "1:1 with Ola",
+      "type": "one_on_one",
+      "start": "2026-09-16T12:45:00+02:00",
+      "end": "2026-09-16T13:15:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-18-2026-09-17-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-17T09:00:00+02:00",
+      "end": "2026-09-17T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "product-review-3-2026-09-17-600",
+      "kind": "meeting",
+      "title": "Product review",
+      "type": "product_review",
+      "start": "2026-09-17T10:00:00+02:00",
+      "end": "2026-09-17T11:00:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-17",
+      "kind": "workout",
+      "title": "Run: tempo 3 x 2 km",
+      "intensity": "tempo",
+      "start": "2026-09-17T18:30:00+02:00",
+      "end": "2026-09-17T19:30:00+02:00"
+    },
+    {
+      "id": "standup-19-2026-09-18-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-18T09:00:00+02:00",
+      "end": "2026-09-18T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "interview-kamil-stepien-0-2026-09-18-585",
+      "kind": "meeting",
+      "title": "Interview - Kamil Stępień",
+      "type": "interview",
+      "start": "2026-09-18T09:45:00+02:00",
+      "end": "2026-09-18T10:45:00+02:00",
+      "attendeeIds": [
+        "kamil-stepien"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "one-on-one-piotr-2-2026-09-18-690",
+      "kind": "meeting",
+      "title": "1:1 with Piotr",
+      "type": "one_on_one",
+      "start": "2026-09-18T11:30:00+02:00",
+      "end": "2026-09-18T12:00:00+02:00",
+      "attendeeIds": [
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-20-2026-09-21-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-21T09:00:00+02:00",
+      "end": "2026-09-21T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "interview-karolina-pawlowska-0-2026-09-21-615",
+      "kind": "meeting",
+      "title": "Interview - Karolina Pawłowska",
+      "type": "interview",
+      "start": "2026-09-21T10:15:00+02:00",
+      "end": "2026-09-21T11:15:00+02:00",
+      "attendeeIds": [
+        "karolina-pawlowska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "customer-tomasz-3-2026-09-21-765",
+      "kind": "meeting",
+      "title": "Customer call with Tomasz",
+      "type": "customer",
+      "start": "2026-09-21T12:45:00+02:00",
+      "end": "2026-09-21T13:15:00+02:00",
+      "attendeeIds": [
+        "tomasz-lewandowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-21-2026-09-22-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-22T09:00:00+02:00",
+      "end": "2026-09-22T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "product-review-4-2026-09-22-585",
+      "kind": "meeting",
+      "title": "Product review",
+      "type": "product_review",
+      "start": "2026-09-22T09:45:00+02:00",
+      "end": "2026-09-22T10:45:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-22",
+      "kind": "workout",
+      "title": "Run: intervals 6 x 800 m",
+      "intensity": "intervals",
+      "start": "2026-09-22T18:30:00+02:00",
+      "end": "2026-09-22T19:30:00+02:00"
+    },
+    {
+      "id": "standup-22-2026-09-23-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-23T09:00:00+02:00",
+      "end": "2026-09-23T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "board-2-2026-09-23-600",
+      "kind": "meeting",
+      "title": "Board meeting",
+      "type": "board",
+      "start": "2026-09-23T10:00:00+02:00",
+      "end": "2026-09-23T12:00:00+02:00",
+      "attendeeIds": [
+        "anna-kowalska",
+        "kasia-wojcik",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "investor-anna-2-2026-09-23-810",
+      "kind": "meeting",
+      "title": "Investor update with Anna",
+      "type": "investor",
+      "start": "2026-09-23T13:30:00+02:00",
+      "end": "2026-09-23T14:30:00+02:00",
+      "attendeeIds": [
+        "anna-kowalska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "one-on-one-piotr-0-2026-09-23-990",
+      "kind": "meeting",
+      "title": "1:1 with Piotr",
+      "type": "one_on_one",
+      "start": "2026-09-23T16:30:00+02:00",
+      "end": "2026-09-23T17:00:00+02:00",
+      "attendeeIds": [
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-23-2026-09-24-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-24T09:00:00+02:00",
+      "end": "2026-09-24T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "investor-krzysztof-szymanski-0-2026-09-24-630",
+      "kind": "meeting",
+      "title": "Investor call - Odra Capital",
+      "type": "investor",
+      "start": "2026-09-24T10:30:00+02:00",
+      "end": "2026-09-24T11:30:00+02:00",
+      "attendeeIds": [
+        "krzysztof-szymanski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-24",
+      "kind": "workout",
+      "title": "Run: easy 8 km",
+      "intensity": "easy",
+      "start": "2026-09-24T18:30:00+02:00",
+      "end": "2026-09-24T19:30:00+02:00"
+    },
+    {
+      "id": "standup-24-2026-09-25-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-25T09:00:00+02:00",
+      "end": "2026-09-25T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "interview-mateusz-wieczorek-0-2026-09-25-615",
+      "kind": "meeting",
+      "title": "Interview - Mateusz Wieczorek",
+      "type": "interview",
+      "start": "2026-09-25T10:15:00+02:00",
+      "end": "2026-09-25T11:15:00+02:00",
+      "attendeeIds": [
+        "mateusz-wieczorek"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "customer-tomasz-2-2026-09-25-720",
+      "kind": "meeting",
+      "title": "Customer call with Tomasz",
+      "type": "customer",
+      "start": "2026-09-25T12:00:00+02:00",
+      "end": "2026-09-25T12:30:00+02:00",
+      "attendeeIds": [
+        "tomasz-lewandowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-26",
+      "kind": "workout",
+      "title": "Run: tempo 3 x 2 km",
+      "intensity": "tempo",
+      "start": "2026-09-26T18:30:00+02:00",
+      "end": "2026-09-26T19:30:00+02:00"
+    },
+    {
+      "id": "standup-25-2026-09-28-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-28T09:00:00+02:00",
+      "end": "2026-09-28T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "interview-weronika-olszewska-0-2026-09-28-585",
+      "kind": "meeting",
+      "title": "Interview - Weronika Olszewska",
+      "type": "interview",
+      "start": "2026-09-28T09:45:00+02:00",
+      "end": "2026-09-28T10:45:00+02:00",
+      "attendeeIds": [
+        "weronika-olszewska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "customer-rafal-wojciechowski-0-2026-09-28-690",
+      "kind": "meeting",
+      "title": "Customer call - Rafał Wojciechowski",
+      "type": "customer",
+      "start": "2026-09-28T11:30:00+02:00",
+      "end": "2026-09-28T12:00:00+02:00",
+      "attendeeIds": [
+        "rafal-wojciechowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "standup-26-2026-09-29-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-29T09:00:00+02:00",
+      "end": "2026-09-29T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "one-on-one-ola-2-2026-09-29-555",
+      "kind": "meeting",
+      "title": "1:1 with Ola",
+      "type": "one_on_one",
+      "start": "2026-09-29T09:15:00+02:00",
+      "end": "2026-09-29T09:45:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "mentor-ewa-1-2026-09-29-645",
+      "kind": "meeting",
+      "title": "Mentor session with Ewa",
+      "type": "mentor",
+      "start": "2026-09-29T10:45:00+02:00",
+      "end": "2026-09-29T11:45:00+02:00",
+      "attendeeIds": [
+        "ewa-mazur"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-29",
+      "kind": "workout",
+      "title": "Run: easy 8 km",
+      "intensity": "easy",
+      "start": "2026-09-29T18:30:00+02:00",
+      "end": "2026-09-29T19:30:00+02:00"
+    },
+    {
+      "id": "standup-27-2026-09-30-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-09-30T09:00:00+02:00",
+      "end": "2026-09-30T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "product-review-5-2026-09-30-600",
+      "kind": "meeting",
+      "title": "Product review",
+      "type": "product_review",
+      "start": "2026-09-30T10:00:00+02:00",
+      "end": "2026-09-30T11:00:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-09-30",
+      "kind": "workout",
+      "title": "Run: tempo 3 x 2 km",
+      "intensity": "tempo",
+      "start": "2026-09-30T18:30:00+02:00",
+      "end": "2026-09-30T19:30:00+02:00"
+    },
+    {
+      "id": "standup-28-2026-10-01-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-10-01T09:00:00+02:00",
+      "end": "2026-10-01T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "investor-pawel-dabrowski-0-2026-10-01-600",
+      "kind": "meeting",
+      "title": "Investor call - Mazovia Growth",
+      "type": "investor",
+      "start": "2026-10-01T10:00:00+02:00",
+      "end": "2026-10-01T11:00:00+02:00",
+      "attendeeIds": [
+        "pawel-dabrowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-10-01",
+      "kind": "workout",
+      "title": "Run: easy 8 km",
+      "intensity": "easy",
+      "start": "2026-10-01T18:30:00+02:00",
+      "end": "2026-10-01T19:30:00+02:00"
+    },
+    {
+      "id": "standup-29-2026-10-02-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-10-02T09:00:00+02:00",
+      "end": "2026-10-02T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "mentor-kasia-0-2026-10-02-600",
+      "kind": "meeting",
+      "title": "Mentor session with Kasia",
+      "type": "mentor",
+      "start": "2026-10-02T10:00:00+02:00",
+      "end": "2026-10-02T11:00:00+02:00",
+      "attendeeIds": [
+        "kasia-wojcik"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "one-on-one-piotr-1-2026-10-02-990",
+      "kind": "meeting",
+      "title": "1:1 with Piotr",
+      "type": "one_on_one",
+      "start": "2026-10-02T16:30:00+02:00",
+      "end": "2026-10-02T17:00:00+02:00",
+      "attendeeIds": [
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-0-2026-10-05-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-10-05T09:00:00+02:00",
+      "end": "2026-10-05T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "future-1-2026-10-05-600",
+      "kind": "meeting",
+      "title": "Board meeting",
+      "type": "board",
+      "start": "2026-10-05T10:00:00+02:00",
+      "end": "2026-10-05T12:00:00+02:00",
+      "attendeeIds": [
+        "anna-kowalska",
+        "kasia-wojcik",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-2-2026-10-05-720",
+      "kind": "meeting",
+      "title": "1:1 with Piotr",
+      "type": "one_on_one",
+      "start": "2026-10-05T12:00:00+02:00",
+      "end": "2026-10-05T12:30:00+02:00",
+      "attendeeIds": [
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-3-2026-10-05-840",
+      "kind": "meeting",
+      "title": "Investor call",
+      "type": "investor",
+      "start": "2026-10-05T14:00:00+02:00",
+      "end": "2026-10-05T15:00:00+02:00",
+      "attendeeIds": [
+        "anna-kowalska",
+        "michal-zielinski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-4-2026-10-05-990",
+      "kind": "meeting",
+      "title": "Customer call",
+      "type": "customer",
+      "start": "2026-10-05T16:30:00+02:00",
+      "end": "2026-10-05T17:00:00+02:00",
+      "attendeeIds": [
+        "tomasz-lewandowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "run-2026-10-05",
+      "kind": "workout",
+      "title": "Run: intervals 6 x 800 m",
+      "intensity": "intervals",
+      "start": "2026-10-05T18:30:00+02:00",
+      "end": "2026-10-05T19:30:00+02:00"
+    },
+    {
+      "id": "future-5-2026-10-06-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-10-06T09:00:00+02:00",
+      "end": "2026-10-06T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "future-6-2026-10-06-600",
+      "kind": "meeting",
+      "title": "Product review",
+      "type": "product_review",
+      "start": "2026-10-06T10:00:00+02:00",
+      "end": "2026-10-06T11:00:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-7-2026-10-06-810",
+      "kind": "meeting",
+      "title": "Interview - Igor Malinowski",
+      "type": "interview",
+      "start": "2026-10-06T13:30:00+02:00",
+      "end": "2026-10-06T14:30:00+02:00",
+      "attendeeIds": [
+        "igor-malinowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-8-2026-10-06-900",
+      "kind": "meeting",
+      "title": "1:1 with Ola",
+      "type": "one_on_one",
+      "start": "2026-10-06T15:00:00+02:00",
+      "end": "2026-10-06T15:30:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-9-2026-10-06-990",
+      "kind": "meeting",
+      "title": "Customer call - Ewelina Górska",
+      "type": "customer",
+      "start": "2026-10-06T16:30:00+02:00",
+      "end": "2026-10-06T17:30:00+02:00",
+      "attendeeIds": [
+        "ewelina-gorska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-10-2026-10-07-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-10-07T09:00:00+02:00",
+      "end": "2026-10-07T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "future-11-2026-10-07-600",
+      "kind": "meeting",
+      "title": "Interview - Julia Sikora",
+      "type": "interview",
+      "start": "2026-10-07T10:00:00+02:00",
+      "end": "2026-10-07T11:00:00+02:00",
+      "attendeeIds": [
+        "julia-sikora"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-12-2026-10-07-720",
+      "kind": "meeting",
+      "title": "Mentor session with Ewa",
+      "type": "mentor",
+      "start": "2026-10-07T12:00:00+02:00",
+      "end": "2026-10-07T13:00:00+02:00",
+      "attendeeIds": [
+        "ewa-mazur"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-13-2026-10-07-840",
+      "kind": "meeting",
+      "title": "Investor call - Carpathia Ventures",
+      "type": "investor",
+      "start": "2026-10-07T14:00:00+02:00",
+      "end": "2026-10-07T15:00:00+02:00",
+      "attendeeIds": [
+        "szymon-pietrzak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-14-2026-10-07-990",
+      "kind": "meeting",
+      "title": "1:1 with Piotr",
+      "type": "one_on_one",
+      "start": "2026-10-07T16:30:00+02:00",
+      "end": "2026-10-07T17:00:00+02:00",
+      "attendeeIds": [
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-15-2026-10-08-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-10-08T09:00:00+02:00",
+      "end": "2026-10-08T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "future-16-2026-10-08-600",
+      "kind": "meeting",
+      "title": "Customer call with Tomasz",
+      "type": "customer",
+      "start": "2026-10-08T10:00:00+02:00",
+      "end": "2026-10-08T11:00:00+02:00",
+      "attendeeIds": [
+        "tomasz-lewandowski"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-17-2026-10-08-780",
+      "kind": "meeting",
+      "title": "Product review",
+      "type": "product_review",
+      "start": "2026-10-08T13:00:00+02:00",
+      "end": "2026-10-08T14:00:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-18-2026-10-08-900",
+      "kind": "meeting",
+      "title": "Interview - Filip Kaczmarek",
+      "type": "interview",
+      "start": "2026-10-08T15:00:00+02:00",
+      "end": "2026-10-08T16:00:00+02:00",
+      "attendeeIds": [
+        "filip-kaczmarek"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-19-2026-10-08-990",
+      "kind": "meeting",
+      "title": "1:1 with Ola",
+      "type": "one_on_one",
+      "start": "2026-10-08T16:30:00+02:00",
+      "end": "2026-10-08T17:00:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-20-2026-10-09-540",
+      "kind": "meeting",
+      "title": "Standup",
+      "type": "standup",
+      "start": "2026-10-09T09:00:00+02:00",
+      "end": "2026-10-09T09:15:00+02:00",
+      "attendeeIds": [],
+      "isGroup": true
+    },
+    {
+      "id": "future-21-2026-10-09-600",
+      "kind": "meeting",
+      "title": "1:1 with Piotr",
+      "type": "one_on_one",
+      "start": "2026-10-09T10:00:00+02:00",
+      "end": "2026-10-09T10:30:00+02:00",
+      "attendeeIds": [
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-22-2026-10-09-690",
+      "kind": "meeting",
+      "title": "Customer call - Grzegorz Baran",
+      "type": "customer",
+      "start": "2026-10-09T11:30:00+02:00",
+      "end": "2026-10-09T12:30:00+02:00",
+      "attendeeIds": [
+        "grzegorz-baran"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-23-2026-10-09-840",
+      "kind": "meeting",
+      "title": "Product review",
+      "type": "product_review",
+      "start": "2026-10-09T14:00:00+02:00",
+      "end": "2026-10-09T15:00:00+02:00",
+      "attendeeIds": [
+        "ola-wisniewska",
+        "piotr-nowak"
+      ],
+      "isGroup": false
+    },
+    {
+      "id": "future-24-2026-10-09-960",
+      "kind": "meeting",
+      "title": "Interview - Hanna Wróbel",
+      "type": "interview",
+      "start": "2026-10-09T16:00:00+02:00",
+      "end": "2026-10-09T17:00:00+02:00",
+      "attendeeIds": [
+        "hanna-wrobel"
+      ],
+      "isGroup": false
+    }
+  ],
+  "reflections": [
+    {
+      "meetingId": "board-0-2026-09-03-600",
+      "rating": 0
+    },
+    {
+      "meetingId": "board-1-2026-09-11-600",
+      "rating": -1
+    },
+    {
+      "meetingId": "board-2-2026-09-23-600",
+      "rating": 0
+    },
+    {
+      "meetingId": "investor-anna-0-2026-09-03-810",
+      "rating": -1
+    },
+    {
+      "meetingId": "investor-anna-1-2026-09-11-810",
+      "rating": -1
+    },
+    {
+      "meetingId": "investor-anna-2-2026-09-23-810",
+      "rating": -1
+    },
+    {
+      "meetingId": "customer-tomasz-0-2026-09-11-990",
+      "rating": -1
+    },
+    {
+      "meetingId": "customer-tomasz-1-2026-08-26-780",
+      "rating": -1
+    },
+    {
+      "meetingId": "customer-tomasz-2-2026-09-25-720",
+      "rating": 0
+    },
+    {
+      "meetingId": "customer-tomasz-3-2026-09-21-765",
+      "rating": -1
+    },
+    {
+      "meetingId": "one-on-one-piotr-0-2026-09-23-990",
+      "rating": 0
+    },
+    {
+      "meetingId": "one-on-one-piotr-2-2026-09-18-690",
+      "rating": 1
+    },
+    {
+      "meetingId": "one-on-one-piotr-3-2026-09-07-735",
+      "rating": 1
+    },
+    {
+      "meetingId": "one-on-one-piotr-4-2026-09-09-750",
+      "rating": 0
+    },
+    {
+      "meetingId": "one-on-one-piotr-5-2026-08-24-735",
+      "rating": 0
+    },
+    {
+      "meetingId": "one-on-one-ola-0-2026-09-03-990",
+      "rating": 1
+    },
+    {
+      "meetingId": "one-on-one-ola-1-2026-09-09-555",
+      "rating": 1
+    },
+    {
+      "meetingId": "one-on-one-ola-2-2026-09-29-555",
+      "rating": 1
+    },
+    {
+      "meetingId": "one-on-one-ola-3-2026-09-14-555",
+      "rating": 1
+    },
+    {
+      "meetingId": "one-on-one-ola-4-2026-09-16-765",
+      "rating": 0
+    },
+    {
+      "meetingId": "one-on-one-ola-5-2026-09-15-690",
+      "rating": 1
+    },
+    {
+      "meetingId": "product-review-0-2026-08-31-630",
+      "rating": 1
+    },
+    {
+      "meetingId": "product-review-1-2026-09-02-615",
+      "rating": 1
+    },
+    {
+      "meetingId": "product-review-2-2026-09-10-615",
+      "rating": 0
+    },
+    {
+      "meetingId": "product-review-3-2026-09-17-600",
+      "rating": 1
+    },
+    {
+      "meetingId": "product-review-4-2026-09-22-585",
+      "rating": 0
+    },
+    {
+      "meetingId": "product-review-5-2026-09-30-600",
+      "rating": 1
+    },
+    {
+      "meetingId": "mentor-kasia-0-2026-10-02-600",
+      "rating": 0
+    },
+    {
+      "meetingId": "mentor-kasia-1-2026-08-25-630",
+      "rating": 1
+    }
+  ]
+}
